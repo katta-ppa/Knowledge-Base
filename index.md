@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## Daily Commands
 
-You can use the [editor on GitHub](https://github.com/katta-ppa/Knowledge-Base/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+#Check Top Processes sorted by RAM or CPU Usage in Linux
 ```markdown
-Syntax highlighted code block
+# ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+PID  	PPID 	CMD                      	%MEM 	%CPU
+2591	2113 	/usr/lib/firefox/firefox    7.3 	43.5
+2549   2520 	/usr/lib/virtualbox/Virtual 3.4  	8.2
+2288       1 	/home/gacanepa/.dropbox-dis	1.4	0.3
+1889   1543	c:\TeamViewer\TeamViewer.ex	1.0	0.2
+2113	1801	/usr/bin/cinnamon		0.9	3.5
+2254	2252	python /usr/bin/linuxmint/m	0.3	0.0
+2245	1801	nautilus -n			0.3	0.1
+1645	1595	/usr/bin/X :0 -audit 0 -aut	0.3	2.5
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/katta-ppa/Knowledge-Base/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
